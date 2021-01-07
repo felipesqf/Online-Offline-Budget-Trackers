@@ -6,8 +6,7 @@ require("dotenv").config();
 const PWD = process.env.MYDB_PWD;
 const databaseUrl = `mongodb+srv://felipesqf:${encodeURIComponent(PWD)}@cluster0.prkbb.mongodb.net/budget`;
 
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(logger("dev"));
