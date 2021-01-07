@@ -2,9 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
-
-
-const PWD = 'Fel!pe012021';
+const PWD = process.env.MYDB_PWD;
 const databaseUrl = `mongodb+srv://felipesqf:${encodeURIComponent(PWD)}@cluster0.prkbb.mongodb.net/budget`;
 
 const PORT = 3000;
@@ -19,9 +17,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(databaseUrl, {
+mongoose.connect(process.env.MONGODB_URI || databaseUrl, {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+  useCreateIndex: true
 });
 
 // routes
