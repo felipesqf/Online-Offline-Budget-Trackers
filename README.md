@@ -37,7 +37,7 @@ THEN that will be shown on the page, and added to their transaction history when
 
 #### Final Product
 
-![screenshot1](https://github.com/felipesqf/Workout-Tracker/blob/main/public/assets/1.png)
+![screenshot1](https://github.com/felipesqf/Online-Offline-Budget-Trackers/blob/main/public/assets/bg1.png)
 
 
 ### Licence
