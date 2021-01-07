@@ -47,7 +47,7 @@ License under the [MIT License](LICENSE)
 
 ### Link to the Website
 
-<a href="https://felipesqf.github.io/Online-Offline-Budget-Trackers/">Link to the Budget Tracker application</a>
+<a href="https://rocky-journey-41488.herokuapp.com/">Link to the Budget Tracker application</a>
 
 ## Authors
 
