@@ -3,6 +3,10 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
+
+const PWD = 'Fel!pe012021';
+const databaseUrl = `mongodb+srv://felipesqf:${encodeURIComponent(PWD)}@cluster0.prkbb.mongodb.net/budget`;
+
 const PORT = 3000;
 
 const app = express();
@@ -15,7 +19,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect(databaseUrl, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
